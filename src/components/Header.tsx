@@ -144,7 +144,8 @@ export default function Header({ onBookVisitClick, onAdminClick }: HeaderProps) 
                 {item.name}
               </a>
             ))}
-            <Button
+            {/* Admin Login button - Hidden in mobile view for future use */}
+            {/* <Button
               onClick={() => {
                 onAdminClick();
                 setIsMobileMenuOpen(false);
@@ -154,7 +155,7 @@ export default function Header({ onBookVisitClick, onAdminClick }: HeaderProps) 
             >
               <UserCircle size={18} className="mr-2" />
               Admin Login
-            </Button>
+            </Button> */}
             <Button
               onClick={() => {
                 onBookVisitClick();
