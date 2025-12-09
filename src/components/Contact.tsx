@@ -42,6 +42,13 @@ export default function Contact() {
     window.open(whatsappUrl, '_blank');
 
     toast.success('Message sent! We will contact you soon.');
+
+    // Google Ads conversion event
+    (window as any)?.gtag?.('event', 'conversion', {
+      send_to: 'AW-17222552794/JYu3CI-JuM4bENqZrZRA',
+      value: 1.0,
+      currency: 'INR',
+    });
     
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
