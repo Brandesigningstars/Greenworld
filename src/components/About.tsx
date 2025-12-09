@@ -62,7 +62,7 @@ export default function About() {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <ImageWithFallback
-              src="public/about.jpg"
+              src="/public/about.jpg"
               alt="Green World Realtors Building"
               className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
             />
