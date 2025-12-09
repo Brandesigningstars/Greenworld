@@ -42,13 +42,11 @@ import { Client } from '../types/client';
 interface AdminDashboardProps {
   onClose: () => void;
   projects: {
-    featured: Project[];
     ongoing: Project[];
     completed: Project[];
     upcoming: Project[];
   };
   onProjectsUpdate: (projects: {
-    featured: Project[];
     ongoing: Project[];
     completed: Project[];
     upcoming: Project[];
@@ -577,7 +575,6 @@ export default function AdminDashboard({ onClose, projects, onProjectsUpdate, cl
                             <SelectValue placeholder="Select category" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="featured">Featured</SelectItem>
                             <SelectItem value="ongoing">Ongoing</SelectItem>
                             <SelectItem value="completed">Completed</SelectItem>
                             <SelectItem value="upcoming">Upcoming</SelectItem>
@@ -657,7 +654,6 @@ export default function AdminDashboard({ onClose, projects, onProjectsUpdate, cl
                             <SelectValue />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="featured">Featured</SelectItem>
                             <SelectItem value="ongoing">Ongoing</SelectItem>
                             <SelectItem value="completed">Completed</SelectItem>
                             <SelectItem value="upcoming">Upcoming</SelectItem>
@@ -706,15 +702,14 @@ export default function AdminDashboard({ onClose, projects, onProjectsUpdate, cl
             </Dialog>
 
             {/* Project Lists */}
-            <Tabs defaultValue="featured" className="space-y-4">
-              <TabsList className="grid w-full grid-cols-4 bg-white">
-                <TabsTrigger value="featured">Featured ({projects.featured.length})</TabsTrigger>
+            <Tabs defaultValue="ongoing" className="space-y-4">
+              <TabsList className="grid w-full grid-cols-3 bg-white">
                 <TabsTrigger value="ongoing">Ongoing ({projects.ongoing.length})</TabsTrigger>
                 <TabsTrigger value="completed">Completed ({projects.completed.length})</TabsTrigger>
                 <TabsTrigger value="upcoming">Upcoming ({projects.upcoming.length})</TabsTrigger>
               </TabsList>
 
-              {(['featured', 'ongoing', 'completed', 'upcoming'] as const).map((category) => (
+              {(['ongoing', 'completed', 'upcoming'] as const).map((category) => (
                 <TabsContent key={category} value={category}>
                   <Card>
                     <CardHeader>

@@ -62,7 +62,7 @@ export default function About() {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1592898918831-cc7eea4ea57c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcGFydG1lbnQlMjBjb21wbGV4fGVufDF8fHx8MTc1OTcyODI5MXww&ixlib=rb-4.1.0&q=80&w=1080"
+              src="public/about.jpg"
               alt="Green World Realtors Building"
               className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
             />

@@ -27,38 +27,39 @@ export default function Gallery() {
 
   const galleryImages = [
     {
-      url: 'https://images.unsplash.com/photo-1611095210561-67f0832b1ca3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBhcGFydG1lbnQlMjBidWlsZGluZ3xlbnwxfHx8fDE3NTk3MDI3MzR8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Luxury Apartments',
+      url: '/gallery images/g1.jpg',
+      title: 'Arjun Nagar Plot 1',
     },
     {
-      url: 'https://amazingarchitecture.com/storage/files/1742/architecture-projects/cubism-architects/n-cube-villa/n_cube_villa_cubism_architects_and_interiors_india-01.jpg',
-      title: 'Modern Villas',
+      url: '/gallery images/g2.jpg',
+      title: 'Arjun Nagar Plot 2',
     },
     {
-      url: 'https://images.unsplash.com/photo-1638284457192-27d3d0ec51aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lJTIwbGl2aW5nJTIwcm9vbXxlbnwxfHx8fDE3NTk2ODg4MDR8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Luxury Interiors',
+      url: '/gallery images/g3.jpg',
+      title: 'Arjun Nagar Plot 3',
     },
     {
-      url: 'https://images.unsplash.com/photo-1682888813795-192fca4a10d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBraXRjaGVuJTIwZGVzaWdufGVufDF8fHx8MTc1OTY1MTMyNnww&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Modern Kitchen',
+      url: '/gallery images/g4.jpg',
+      title: 'Arjun Nagar Plot 4',
     },
     {
-      url: 'https://images.unsplash.com/photo-1753505889211-9cfbac527474?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwcGVudGhvdXNlJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzU5NzI4MjkwfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Premium Penthouse',
+      url: '/gallery images/g6.jpg',
+      title: 'Bharathi Highway City Plot 1',
     },
     {
-      url: 'https://images.unsplash.com/photo-1592898918831-cc7eea4ea57c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcGFydG1lbnQlMjBjb21wbGV4fGVufDF8fHx8MTc1OTcyODI5MXww&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Apartment Complex',
+      url: '/gallery images/g5.jpg',
+      title: 'Bharathi Highway City Plot 2',
     },
     {
-      url: 'https://images.unsplash.com/photo-1689574666650-de9cd6056e82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMHByb3BlcnR5JTIwZGV2ZWxvcG1lbnR8ZW58MXx8fHwxNzU5NzI4MjkwfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Property Development',
+      url: '/gallery images/g7.jpg',
+      title: 'Bharathi Highway City Plot 3',
     },
     {
-      url: 'https://images.unsplash.com/photo-1654000749275-7b032f760975?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwY29uc3RydWN0aW9ufGVufDF8fHx8MTc1OTcyODI5MXww&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Construction Progress',
+      url: '/gallery images/g8.jpg',
+      title: 'Bharathi Highway City Plot 4',
     },
   ];
+  
 
   return (
     <>

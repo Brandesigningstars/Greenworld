@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { MapPin, Home, IndianRupee, Calendar } from 'lucide-react';
+import { Calendar, CheckCircle2 } from 'lucide-react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { ImageWithFallback } from './figma/ImageWithFallback';
@@ -12,13 +12,11 @@ interface ProjectCardProps extends Project {
 
 export default function ProjectCard({
   title,
-  location,
   image,
-  type,
-  price,
   status,
-  units,
-  completion,
+  area,
+  year,
+  dtcpApproved,
   onBookVisit,
   onViewDetails,
 }: ProjectCardProps) {
@@ -38,14 +36,13 @@ export default function ProjectCard({
 
   return (
     <motion.div
-  initial={{ opacity: 0, scale: 0.9 }}
-  whileInView={{ opacity: 1, scale: 1 }}
-  viewport={{ once: true, margin: '-100px' }}
-  transition={{ duration: 0.5 }}
-  whileHover={{ y: -10, scale: 1.03 }}
-  className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group bg-white"
->
-
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, margin: '-100px' }}
+      transition={{ duration: 0.5 }}
+      whileHover={{ y: -10, scale: 1.03 }}
+      className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group bg-white"
+    >
       <div className="relative overflow-hidden h-64">
         <ImageWithFallback
           src={image}
@@ -61,49 +58,48 @@ export default function ProjectCard({
       </div>
 
       <div className="p-6">
-        <h3 className="text-2xl mb-2 text-gray-800 group-hover:text-green-700 transition-colors duration-300">
+        <h3 className="text-2xl mb-4 text-gray-800 group-hover:text-green-700 transition-colors duration-300">
           {title}
         </h3>
 
-        <div className="flex items-center text-gray-600 mb-4">
-          <MapPin size={18} className="mr-2 text-green-600" />
-          <span>{location}</span>
-        </div>
-
-        <div className="grid grid-cols-2 gap-4 mb-6">
-          <div className="flex items-center text-gray-700">
-            <Home size={18} className="mr-2 text-green-600" />
-            <span className="text-sm">{type}</span>
-          </div>
-          <div className="flex items-center text-gray-700">
-            <IndianRupee size={18} className="mr-2 text-green-600" />
-            <span className="text-sm">{price}</span>
-          </div>
-          {units && (
+        <div className="space-y-3 mb-6">
+          {area && (
             <div className="flex items-center text-gray-700">
-              <Home size={18} className="mr-2 text-green-600" />
-              <span className="text-sm">{units}</span>
+              <span className="text-sm font-medium mr-2">Area:</span>
+              <span className="text-sm">{area}</span>
             </div>
           )}
-          {completion && (
+          
+          {dtcpApproved !== undefined && (
+            <div className="flex items-center text-gray-700">
+              <CheckCircle2 size={18} className="mr-2 text-green-600" />
+              <span className="text-sm">
+                {dtcpApproved ? 'DTCP Approved' : 'DTCP Pending'}
+              </span>
+            </div>
+          )}
+          
+          {year && (
             <div className="flex items-center text-gray-700">
               <Calendar size={18} className="mr-2 text-green-600" />
-              <span className="text-sm">{completion}</span>
+              <span className="text-sm">Year: {year}</span>
             </div>
           )}
         </div>
 
         <div className="flex gap-3">
-          <Button
-            onClick={onBookVisit}
-            className="flex-1 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white shadow-md hover:shadow-lg transition-all duration-300"
-          >
-            Book Visit
-          </Button>
+          {status !== 'completed' && (
+            <Button
+              onClick={onBookVisit}
+              className="flex-1 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              Book Visit
+            </Button>
+          )}
           <Button
             onClick={onViewDetails}
             variant="outline"
-            className="flex-1 border-2 border-green-600 text-green-700 hover:bg-green-50 transition-all duration-300"
+            className={status === 'completed' ? "w-full border-2 border-green-600 text-green-700 hover:bg-green-50 transition-all duration-300" : "flex-1 border-2 border-green-600 text-green-700 hover:bg-green-50 transition-all duration-300"}
           >
             View Details
           </Button>

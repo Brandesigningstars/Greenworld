@@ -42,4 +42,7 @@ export interface Project {
   plotSizes?: string[];
   contactPerson?: string;
   contactPhone?: string;
+  area?: string; // For upcoming projects - acres
+  year?: string | number; // Year for completed/ongoing projects
+  dtcpApproved?: boolean; // DTCP approval status
 }

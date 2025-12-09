@@ -25,7 +25,6 @@ function AppContent() {
   const [isBookVisitOpen, setIsBookVisitOpen] = useState(false);
   const [showDashboard, setShowDashboard] = useState(false);
   const [projects, setProjects] = useState<{
-    featured: Project[];
     ongoing: Project[];
     completed: Project[];
     upcoming: Project[];
@@ -55,7 +54,6 @@ function AppContent() {
         <AdminDashboard 
           onClose={() => setShowDashboard(false)} 
           projects={projects || {
-            featured: [],
             ongoing: [],
             completed: [],
             upcoming: []
