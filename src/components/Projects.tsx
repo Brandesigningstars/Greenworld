@@ -73,7 +73,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SUBRAMANI NAGAR PHASE 1',
         location: 'KUNDRATHUR',
-        image: '',
+        image: 'project/cp4.jpg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -83,7 +83,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SUBRAMANI NAGAR PHASE 2',
         location: 'KUNDRATHUR',
-        image: '',
+        image: 'project/cp5.jpg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -93,7 +93,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SUBRAMANI NAGAR',
         location: 'OLD PALLAVARAM',
-        image: '',
+        image: 'project/cp6.jpg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -103,7 +103,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SUBRAMANI NAGAR PHASE 2',
         location: 'OLD PALLAVARAM',
-        image: '',
+        image: 'project/cp7.jpg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -113,7 +113,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SHANMUGHA NAGAR',
         location: 'POZHICHALUR',
-        image: '',
+        image: 'project/cp8.jpg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -123,7 +123,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SHANMUGHA NAGAR EXTN',
         location: 'POZHICHALUR',
-        image: '',
+        image: 'project/cp9.jpg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -133,7 +133,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'BHAVANI NAGAR',
         location: 'POZHICHALUR',
-        image: '',
+        image: 'project/cp10.jpg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
