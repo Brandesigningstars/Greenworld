@@ -43,7 +43,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SUBRAMANI NAGAR',
         location: 'GUDUVANCHERY',
-        image: 'project/cp1.jpg',
+        image: 'project/c1.jpeg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -53,7 +53,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SARUVAMANGALAM',
         location: 'GUDUVANCHERY',
-        image: 'project/cp2.jpg',
+        image: 'project/c2.jpeg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -63,7 +63,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SARUVAMANGALAM EXTN',
         location: 'GUDUVANCHERY',
-        image: 'project/cp3.jpg',
+        image: 'project/c3.jpeg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -73,7 +73,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SUBRAMANI NAGAR PHASE 1',
         location: 'KUNDRATHUR',
-        image: 'project/cp4.jpg',
+        image: 'project/c4.jpeg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -83,7 +83,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SUBRAMANI NAGAR PHASE 2',
         location: 'KUNDRATHUR',
-        image: 'project/cp5.jpg',
+        image: 'project/c5.webp',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -93,7 +93,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SUBRAMANI NAGAR',
         location: 'OLD PALLAVARAM',
-        image: 'project/cp6.jpg',
+        image: 'project/c6.jpg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -103,7 +103,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SUBRAMANI NAGAR PHASE 2',
         location: 'OLD PALLAVARAM',
-        image: 'project/cp7.jpg',
+        image: 'project/c7.jpg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -113,7 +113,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SHANMUGHA NAGAR',
         location: 'POZHICHALUR',
-        image: 'project/cp8.jpg',
+        image: 'project/c8.webp',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -123,7 +123,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'SHANMUGHA NAGAR EXTN',
         location: 'POZHICHALUR',
-        image: 'project/cp9.jpg',
+        image: 'project/c9.webp',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -133,7 +133,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'BHAVANI NAGAR',
         location: 'POZHICHALUR',
-        image: 'project/cp10.jpg',
+        image: 'project/c10.webp',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -143,7 +143,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'BHAVANI NAGAR EXTN',
         location: 'POZHICHALUR',
-        image: '',
+        image: 'project/c11.jpg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -153,7 +153,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'MOOVAR NAGAR',
         location: 'POZHICHALUR',
-        image: '',
+        image: 'project/c12.avif',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -163,7 +163,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'MOOVAR NAGAR EXTN',
         location: 'POZHICHALUR',
-        image: '',
+        image: 'project/c13.webp',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -173,7 +173,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'ARJUN NAGAR',
         location: 'THIRUMBHAKADU',
-        image: '',
+        image: 'project/c14.avif',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -183,7 +183,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'ARJUN NAGAR',
         location: 'ARAPEDU',
-        image: '',
+        image: 'project/c15.jpg',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -193,7 +193,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'MINNAL NAGAR',
         location: 'MINNAL VILLAGE',
-        image: '',
+        image: 'project/c16.webp',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
@@ -203,7 +203,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'T.G.NAGAR',
         location: 'IRUMBLIYUR GRAMMAM',
-        image: '',
+        image: 'project/c17.webp',
         type: 'Residential Plots',
         price: 'Sold Out',
         status: 'completed' as const,
