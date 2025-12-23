@@ -253,7 +253,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'KUNDRATHUR',
         location: 'KUNDRATHUR',
-        image: '',
+        image: 'project/up1.jpg',
         type: 'Residential Plots',
         price: 'Pre-Launch',
         status: 'upcoming' as const,
@@ -263,7 +263,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'ACHRAPAKKAM',
         location: 'ACHRAPAKKAM',
-        image: '',
+        image: 'project/up2.jpg',
         type: 'Residential Plots',
         price: 'Pre-Launch',
         status: 'upcoming' as const,
@@ -273,7 +273,7 @@ export default function Projects({ onBookVisitClick, projects: externalProjects 
       {
         title: 'CHENGALPATTU',
         location: 'CHENGALPATTU',
-        image: '',
+        image: 'project/up3.jpg',
         type: 'Residential Plots',
         price: 'Pre-Launch',
         status: 'upcoming' as const,
