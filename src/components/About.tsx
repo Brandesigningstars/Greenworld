@@ -51,7 +51,7 @@ export default function About() {
           <h2 className="text-4xl md:text-5xl mb-4 text-white">About Green World Realtors</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-green-600 to-green-400 mx-auto mb-6"></div>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            Land Promotors | Since 2007
+            Land Developers | Since 2007
           </p>
         </motion.div>
 
