@@ -10,6 +10,7 @@ import MissionVision from './components/MissionVision';
 import Projects from './components/Projects';
 import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
+import ProjectVideos from './components/ProjectVideos';
 import OurClients from './components/OurClients';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
@@ -30,7 +31,7 @@ function AppContent() {
     upcoming: Project[];
   } | undefined>(undefined);
   const [clients, setClients] = useState<Client[] | undefined>(undefined);
-  
+
   const { isAdminLoggedIn } = useAdmin();
 
   const [isAdminLoginOpen, setIsAdminLoginOpen] = useState(false);
@@ -51,8 +52,8 @@ function AppContent() {
   if (showDashboard) {
     return (
       <>
-        <AdminDashboard 
-          onClose={() => setShowDashboard(false)} 
+        <AdminDashboard
+          onClose={() => setShowDashboard(false)}
           projects={projects || {
             ongoing: [],
             completed: [],
@@ -69,21 +70,22 @@ function AppContent() {
 
   return (
     <div className="min-h-screen">
-      <Header 
-        onBookVisitClick={() => setIsBookVisitOpen(true)} 
+      <Header
+        onBookVisitClick={() => setIsBookVisitOpen(true)}
         onAdminClick={handleAdminClick}
       />
       <Hero onBookVisitClick={() => setIsBookVisitOpen(true)} />
       <Stats />
       <About />
       <MissionVision />
-      <Projects 
-        onBookVisitClick={() => setIsBookVisitOpen(true)} 
+      <Projects
+        onBookVisitClick={() => setIsBookVisitOpen(true)}
         projects={projects}
       />
       <Gallery />
       <OurClients clients={clients} />
       <Testimonials />
+      <ProjectVideos />
       <FAQ />
       <Contact />
       <Footer />
