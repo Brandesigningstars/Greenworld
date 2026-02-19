@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
-import v1 from '../assets/v1.MP4';
-import v2 from '../assets/v2.MP4';
-import v3 from '../assets/v3.MP4';
-import v4 from '../assets/v4.MP4';
+import v1 from '../assets/v1.mp4';
+import v2 from '../assets/v2.mp4';
+import v3 from '../assets/v3.mp4';
+import v4 from '../assets/v4.mp4';
 
 export default function ProjectVideos() {
   const videos = [
